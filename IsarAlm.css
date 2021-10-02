@@ -1,0 +1,692 @@
+/*CSS für Isar Alm*/
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    font-family: "Alegreya";
+    list-style: none;
+  }
+
+body{  
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+
+
+
+/* custom scroll bar */
+::-webkit-scrollbar {
+    width: 10px;
+    
+}
+::-webkit-scrollbar-track {
+    background: white;
+}
+::-webkit-scrollbar-thumb {
+    background: #888;
+}
+::selection{
+  background: cornflowerblue;
+}
+.content{
+    max-width: 1250px;
+    padding: 0 30px;
+  }
+
+.navbar{
+  position: fixed;
+  background: azure;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
+  transition: all 0.3s ease;
+}
+.navbar.sticky{
+  background: azure;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+.navbar .content{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+/* .navbar .logo a{
+  color: #fff;
+  font-size: 30px;
+  font-weight: 600;
+  text-decoration: none;    
+} */
+.navbar .menu-list{
+  display: inline-flex;
+}
+.menu-list li{
+  list-style: none;
+}
+.menu-list li a{
+  color: cadetblue;
+  font-size: 18px;
+  font-weight: bold;
+  margin-left: 25px;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+.menu-list li a:hover{
+  color: #97bf0d;
+  font-weight: bold;
+}
+.banner{
+  background: url("banner.jpg") no-repeat;
+  height: 20vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+}
+.about{
+  padding: 30px 0;
+}
+
+.about p{
+  padding-top: 20px;
+  text-align: justify;
+}
+.icon{
+  color: #97bf0d;
+  font-size: 20px;
+  cursor: pointer;
+  display: none;
+}
+.menu-list .cancel-btn{
+  position: absolute;
+  right: 30px;
+  top: 20px;
+}
+
+
+@media (max-width: 1230px) {
+    .content{
+      padding: 0 60px;
+    }
+  }
+  @media (max-width: 1100px) {
+    .content{
+      padding: 0 40px;
+    }
+  }
+  @media (max-width: 900px) {
+    .content{
+      padding: 0 30px;
+    }
+  }
+  @media (max-width: 868px) {
+    body.disabled{
+      overflow: hidden;
+    }
+    .icon{
+      display: block;
+    }
+    .icon.hide{
+      display: none;
+    }
+    .navbar .menu-list{
+      position: fixed;
+      height: 100vh;
+      width: 100%;
+      max-width: 400px;
+      left: -100%;
+      top: 0px;
+      display: block;
+      padding: 40px 0;
+      text-align: center;
+      background: azure;
+      transition: all 0.3s ease;
+    }
+    .navbar.show .menu-list{
+      left: 0%;
+    }
+    .navbar .menu-list li{
+      margin-top: 45px;
+    }
+    .navbar .menu-list li a{
+      font-size: 23px;
+      margin-left: -100%;
+      transition: 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+    }
+    .navbar.show .menu-list li a{
+      margin-left: 0px;
+    }
+  }
+  @media (max-width: 380px) {
+    .navbar .logo a{
+      font-size: 27px;
+    }
+  }
+
+
+
+
+
+
+
+.wrappercookies{
+  position: absolute;
+  height: 40%;
+  bottom: 30px;
+  right: 30px;
+  max-width: 365px;
+  background: #fff;
+  padding: 25px 25px 30px 25px;
+  border-radius: 15px;
+  box-shadow: 1px 7px 14px -5px rgba(0,0,0,0.15);
+  text-align: center;
+  
+}
+.wrappercookies.hide{
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: all 0.3s ease;
+  }
+::selection{
+  color: #fff;
+  background: #97bf0d;
+}
+
+.content header{
+  font-size: 25px;
+  font-weight: 600;
+}
+.content{
+  margin-top: 10px;
+}
+.content p{
+  color: #858585;
+  margin: 5px 0 20px 0;
+}
+.content .buttons{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.buttons button{
+  padding: 10px 20px;
+  border: none;
+  outline: none;
+  color: #fff;
+  font-size: 16px;
+  font-weight: 500;
+  border-radius: 5px;
+  background: #97bf0d;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+.buttons button:hover{
+  transform: scale(0.97);
+}
+.buttons .item{
+  margin: 0 10px;
+}
+.buttons a{
+  color:#97bf0d;
+}
+
+
+
+/*Event*/
+.container-image img{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
+
+.grid-item-image p{
+  text-align: center;
+ padding-left: 70px;
+ padding-right: 70px;
+}
+
+.grid-item-image h2{
+  text-align: center;
+}
+
+/*Event*/
+
+hr{
+    
+    border: 0.125px solid rgb(238, 238, 238);
+    margin: auto;
+    width: 90%;
+    
+}
+
+
+h1 {
+	
+	text-align: center;
+	font-weight: bold;
+	
+}
+
+
+h2 {
+	
+	text-align: center;
+	
+	
+}
+
+h3 {
+	font-family: "Alegreya";
+	text-align: center;
+	color: #97bf0d; 
+}
+
+p {
+	font-family: "Alegreya";
+}
+
+table{
+    font-family: "Alegreya";
+}
+th{
+    text-align: left;
+    font-weight: bold;
+    font-size: 19px;
+}
+
+small{
+    font-family: "Alegreya";
+   
+}
+
+.right{
+    text-align: right;
+}
+
+b{
+    color: #97bf0d;
+
+}
+
+footer{
+    font-family: "Alegreya";
+    text-align: center;
+}
+.black a{
+    color:black;
+    font-style:normal;
+}
+footer .menu-list-down{
+    display: inline-flex;
+    font-size: 13px;
+    justify-content: space-between;
+  }
+
+a{
+	
+	color:#97bf0d;
+	text-decoration: none;
+}
+a:hover {
+	color: #97bf0d;
+	font-weight: bold;
+	text-decoration: none;
+}
+a:visited{
+	text-decoration: none;
+}
+
+
+.border{
+	border: 1.5px solid #97bf0d;
+	padding: 15px;
+	margin-bottom: 35px;
+	text-align: center;
+    width: 80%;
+}
+
+.container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+  }
+.grid-item{ 
+    padding: 20px;
+    align-items: center; 
+}
+
+.willkommen{
+	background-color: azure;
+	padding-top: 0;
+    margin: 10px
+}
+.Anfahrt{
+    width: 100%;
+    display:flex;
+    flex-direction: column;
+    align-items: stretch;
+    height: 100%;
+}
+.Anfahrt2{
+    padding: 20px;
+    align-items: center; 
+}
+.Inhalt{
+    width: 100%;
+    padding-right: 15px;
+    display: block;
+}
+
+.button{
+	border: none;
+	border-radius: 4px;
+	color: white;
+	cursor: pointer;
+	align-content: center;
+	background-color: #97bf0d;
+	padding: 3px;
+    margin-right: auto;
+    margin-left: auto;
+    display: block;
+    white-space: nowrap;  
+}
+
+.button a {
+	color: white;
+	font-family: "Alegreya";
+}
+.button:hover {
+	background-color: darkcyan
+}
+
+
+@media (max-width: 600px){
+    
+    .wrapper header{
+      text-align: center;
+    }
+    .wrapper form{
+      margin: 35px 20px;
+    }
+    form .dbl-field{
+      flex-direction: column;
+      margin-bottom: 0px;
+    }
+    form .dbl-field .field{
+      width: 100%;
+      height: 45px;
+      margin-bottom: 20px;
+    }
+    form .message textarea{
+      resize: none;
+    }
+    form .button-area{
+      margin-top: 20px;
+      flex-direction: column;
+    }
+    .button-area button{
+      width: 100%;
+      padding: 11px 0;
+      font-size: 16px;
+    }
+    .button-area span{
+      margin: 20px 0 0;
+      text-align: center;
+    }
+  }
+
+
+@media only screen and (min-width: 600px) {
+    
+    .border{
+        width: 45%;
+    } 
+    .container2{
+        display: flex;
+        align-content: flex-start;
+        flex-wrap: wrap;
+    }
+    .grid-item2{
+        width: 30%;
+    }
+    h2{
+        text-align: left;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    
+    .container{
+        display: flex;
+        flex-direction: row;
+        text-align: center;
+        align-items: flex-start;
+        width: 99%;
+    }   
+    
+    .grid-item{ 
+        padding: 20px;
+        align-items: left;
+        width: 33%;
+        display: flex;
+    }
+
+    .kontrollstelle{
+        width: 99%;
+    }
+
+    .border{
+        width: 35%;
+    } 
+
+    .container2{
+        width: 20%;
+        height: 50%;
+        justify-content: center;
+        
+    }
+    .grid-item2{
+        width:33%;
+    }
+
+    .Anfahrt{
+        
+        flex-direction: row;
+        text-align: center;
+
+        align-items: center;
+        width: 99%;
+        margin: auto;
+        
+    }
+    .Anfahrt2{
+        padding: 20px;
+        align-items: left;
+        width: 33%;
+        
+    }
+    
+    .button{
+        display: inline-block;
+    }
+    
+    
+}
+
+
+    
+.container2{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    flex-wrap: nowrap;
+    align-items: center;
+    background: rgba(0, 0, 0, 0.3); /* Black background with 0.5 opacity */	
+    
+}
+.container2 a{
+    color: white;
+
+}
+.grid-item2{ 
+    
+    flex-shrink: 1;
+    align-items: center; 
+    width: 40%;
+
+}
+
+/*START*/
+.start {
+	background-image: url("C:/Users/lylk/Desktop/Isar Alm/Blume.jpg");
+	background-size: cover;
+	
+}
+  /*START ENDE*/
+  
+
+/*  Das Kontaktformular*/
+::selection{
+    color: #fff;
+    background: #97bf0d;
+}
+
+.wrapper{
+    margin:auto;
+    width: 715px;
+    background: whitesmoke;
+    border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.05);
+    
+}
+.wrapper header{
+    font-size: 22px;
+    font-weight: 600;
+    padding: 20px 30px;
+    border-bottom: 1px solid lightsteelblue;
+}
+
+.wrapper form{
+    margin: 35px 30px;
+}
+
+.wrapper form.disabled{
+    pointer-events: none;
+    opacity: 0.7;
+}
+
+form .dbl-field{
+    display: flex;
+    margin-bottom: 25px;
+    justify-content: space-between;
+
+}
+
+.dbl-field .field{
+    height:50px;
+    display: flex;
+    position: relative;
+    width: calc(100% / 2 - 13px);
+}
+
+.wrapper form i{
+    position: absolute;
+    top: 50%;
+    left: 18px;
+    color: #ccc;
+    font-size: 17px;
+    pointer-events: none;
+    transform: translateY(-50%);
+  }
+
+form .field input, form .message textarea{
+    height: 100%;
+    width: 100%;
+    outline: none;
+    padding: 0 18px 0 48px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid azure;
+}
+
+.field input::placeholder,
+.message textarea::placeholder{
+  color: #ccc;
+}
+.field input:focus,
+.message textarea:focus{
+  padding-left: 47px;
+  border: 2px solid #97bf0d;
+}
+.field input:focus ~ i,
+.message textarea:focus ~ i{
+  color: #97bf0d;
+}
+form .message{
+  position: relative;
+}
+form .message i{
+  top: 30px;
+  font-size: 20px;
+}
+
+form .message textarea{
+  min-height: 130px;
+  max-height: 230px;
+  max-width: 100%;
+  min-width: 100%;
+  padding: 15px 20px 0 48px;
+}
+form .message textarea::-webkit-scrollbar{
+  width: 0px;
+}
+.message textarea:focus{
+  padding-top: 14px;
+}
+form .button-area{
+  margin: 25px 0;
+  display: flex;
+  align-items: center;
+}
+.button-area button{
+  color: #fff;
+  border: none;
+  outline: none;
+  font-size: 18px;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 13px 25px;
+  background: #97bf0d;
+  transition: background 0.3s ease;
+  margin: auto;
+}
+.button-area button:hover{
+  background: darkcyan;
+}
+.button-area span{
+  font-size: 17px;
+  margin-left: 30px;
+  display: none;
+}
+
+img-hover-zoom {
+  height: 300px; /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.img-hover-zoom img {
+  transition: transform .5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.img-hover-zoom:hover img {
+  transform: scale(1.05);
+}
