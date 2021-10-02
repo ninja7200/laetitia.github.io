@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang = "de">
+<head>
+    <meta charset = "UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
+    <link href ="https://fonts.google.com/specimen/Alegreya?selection.family=Alegreya:wght@400;700#about" rel = "stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel = "icon" type = "image/png" href = "Bilder/Logo_Isaralm_durchsichtig.png"/>
+	<script src="scripts/main.js"></script>
+    <script src="https://kit.fontawesome.com/bfb2d585dc.js" crossorigin="anonymous"></script>
+	<link rel = "stylesheet" href = "IsarAlm.css">
+
+    <title>Isar Alm</title>
+</head>
+
+<body>
+    <nav class="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index_IsarAlm.html"><img src=Bilder/Logo_Isaralm_durchsichtig.png alt="logo" style="width:20%"></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index_IsarAlm.html">Start</a></li>
+          <li><a href="IsarAlm_Event.html">Dein Event</a></li>
+          <li><a href="Bilder.html">Bilder</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+          <li><a href="Anfahrt.html">Anfahrt</a></li>
+     
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    
+    <div class="banner"></div>
+    <div class="about">
+    <div class="content">
+    <div class="title">
+      <h1>Kontakt</h1>
+    </div>
+
+	<p class="border" style= "margin-right: auto; margin-left: auto;" >Da wir auch weiterhin ein Nachbarschafts-Biergarten bleiben wollen reservieren wir ausschließlich für Gruppen ab 15 Personen den <a href="IsarAlm_Event.html">Lounge</a> oder den <a href="IsarAlm_Event.html">Grillbereich</a> . Wenn ihr nur einen Tisch reservieren wollt ist das leider nicht möglich. Kommt einfach vorbei! <br>Wir freuen uns auf euch! &#9825;</p>
+
+<div class ="wrapper">
+    <header style= "text-align:center;">Schicke uns gerne eine Nachricht!</header>
+    <form action="#">
+        <div class ="dbl-field">
+            <div class ="field">
+            <input type = "text" name = "name" placeholder="Dein Name">
+            <i class ="fas fa-user"></i>
+            </div>
+        
+        <div class ="field">
+            <input type = "text" name = "email" placeholder="Deine Email-Adresse">
+            <i class ="fas fa-envelope"></i>
+        </div>
+        </div>
+        <div class ="dbl-field">
+            <div class ="field">
+                <input type = "text" name = "phone" placeholder="Deine Telefonnummer">
+                <i class ="fas fa-phone-alt"></i>
+            </div>
+
+        </div>
+        
+        <div class ="message">
+            <textarea placeholder="Deine Nachricht" name ="message"></textarea>
+            <i class="fa-solid fa-message"></i>
+        </div>
+
+        <div class ="button-area">
+            <button type ="submit">abschicken</button>
+            
+            <span></span>
+        </div>
+      
+    </form>
+</div>
+<script src ="main.js"></script>
+</body>
+
+<footer class ="black">
+    <ul class="menu-list-down">
+      <li><a href="index_IsarAlm.html">Start</a></li>
+      <li><a href="IsarAlm_Event.html">Dein Event</a></li>
+      <li><a href="Anfahrt.html">Anfahrt</a></li>
+      <li><a href="Impressum.html">Impressum</a></li>
+    </ul>
+    <hr>
+      <p style="text-align: center;"> &copy; Isar Alm 2021 <br></p>
+       <address><a href ="https://www.google.com/maps/dir//Isar+Alm,+Nithartstra%C3%9Fe+8,+81541+M%C3%BCnchen/@48.1029396,11.5559646,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x479ddf224e582281:0x633d3fbfe4e4acbb!2m2!1d11.5581533!2d48.1029396">Nithartstraße 8, 81549 München</a></address>
+  
+       
+       <a href = "https://www.facebook.com/isaralm/?ref=page_internal" aria-label = "Facebook"><i class="fab fa-facebook-square"></i></a>
+       <a href = "https://www.instagram.com/isar_alm/?hl=de" aria-label = "Instagram"><i class="fab fa-instagram"></i></a>
+       <a href = "https://biergartenliebe.de/" aria-label = "Biergartenliebe">
+           <img src = "Bilder/Herz_ohneText richtig.png"
+            width = "2%"
+            alt = "logo"/></a>
+          
+</footer>
+
+</div>
+</div>
+
+   
+
+  <script>
+    const body = document.querySelector("body");
+    const navbar = document.querySelector(".navbar");
+    const menuBtn = document.querySelector(".menu-btn");
+    const cancelBtn = document.querySelector(".cancel-btn");
+    menuBtn.onclick = ()=>{
+      navbar.classList.add("show");
+      menuBtn.classList.add("hide");
+      body.classList.add("disabled");
+    }
+    cancelBtn.onclick = ()=>{
+      body.classList.remove("disabled");
+      navbar.classList.remove("show");
+      menuBtn.classList.remove("hide");
+    }
+    window.onscroll = ()=>{
+      this.scrollY > 20 ? navbar.classList.add("sticky") : navbar.classList.remove("sticky");
+    }
+  </script>
+
+
+
+</body> 
+</html>
+
+
