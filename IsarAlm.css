@@ -35,6 +35,32 @@ body{
     max-width: 1250px;
     padding: 0 30px;
   }
+#navbar{
+  position: fixed;
+  top: -100vh;
+  background: azure;
+  width: 100%;
+  z-index: 2;
+  padding: 10px 0;
+  transition: top 0.3s;
+}
+#navbar.sticky{
+  
+  background: azure;
+  padding: 10px 0;
+  box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.1);
+}
+#navbar .content{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+#navbar .menu-list{
+  display: inline-flex;
+}
+
+
+
 
 .navbar{
   position: fixed;
@@ -105,6 +131,17 @@ body{
   top: 20px;
 }
 
+.navbar-bottom {
+  overflow: hidden;
+  width: 99%;
+  margin:auto;
+
+}
+
+.navbar-bottom a {
+  padding: 14px 16px;
+  text-decoration: none;
+}
 
 @media (max-width: 1230px) {
     .content{
@@ -362,25 +399,23 @@ a:visited{
 }
 
 .willkommen{
-	background-color: azure;
+	background-color:aliceblue;
 	padding-top: 0;
     margin: 10px
 }
+
+
 .Anfahrt{
-    width: 100%;
+    width: 90%;
     display:flex;
     flex-direction: column;
     align-items: stretch;
     height: 100%;
 }
 .Anfahrt2{
-    padding: 20px;
     align-items: center; 
-}
-.Inhalt{
-    width: 100%;
-    padding-right: 15px;
-    display: block;
+    margin: auto;
+   align-content: center;
 }
 
 .button{
@@ -388,14 +423,14 @@ a:visited{
 	border-radius: 4px;
 	color: white;
 	cursor: pointer;
-	align-content: center;
 	background-color: #97bf0d;
-	padding: 3px;
-    margin-right: auto;
-    margin-left: auto;
+	padding: 5px;
+    margin: auto;
     display: block;
-    white-space: nowrap;  
+      
 }
+
+
 
 .button a {
 	color: white;
