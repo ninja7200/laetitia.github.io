@@ -46,12 +46,31 @@
     //if cookie is set then hide the cookie box else show it
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
   </script>
-
+    <nav id="navbar">
+      <div class="content">
+        <div class="logo">
+          <a href="index.html"><img src=Bilder/Logo_Isaralm_durchsichtig.png alt="logo" style="width:20%"></a>
+        </div>
+        <ul class="menu-list">
+          <div class="icon cancel-btn">
+            <i class="fas fa-times"></i>
+          </div>
+          <li><a href="index.html">Start</a></li>
+          <li><a href="IsarAlm_Event.html">Dein Event</a></li>
+          <li><a href="Bilder.html">Bilder</a></li>
+          <li><a href="Kontakt.html">Kontakt</a></li>
+          <li><a href="Anfahrt.html">Anfahrt</a></li>
+     
+        </ul>
+        <div class="icon menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </nav>
+    
   
 
-    <div class ="start">
-        
-            
+    <div class ="start"> 
             <figure>
                     <center><a href = "index.html">
                 <img src = "Bilder/Logo_IsarAlm_weiß.png"
@@ -77,29 +96,15 @@
         </div></div>
         
     </div>
-    <div id ="navbar">
+    <!-- <div id ="navbar">
       <a href ="index.html">Start</a>
       <a href="IsarAlm_Event.html">Dein Event</a>
       <a href="Bilder.html">Bilder</a>
       <a href="Kontakt.html">Kontakt</a>
       <a href="Anfahrt.html">Anfahrt</a>
       
-    </div>
-  
-      <script>
-        // When the user scrolls down 20px from the top of the document, slide down the navbar
-        window.onscroll = function() {scrollFunction()};
-        
-        function scrollFunction() {
-          if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
-            document.getElementById("navbar").style.top = "0";
-          } else {
-            document.getElementById("navbar").style.top = "-50px";
-          }
-        }
-        </script>
-    <br>
-		
+    </div> -->
+    
 		<div>
 		<h1>Herzlich willkommen</h1>
 	<p style ="text-align: center" > Die Isar Alm in München - ein Treffpunkt für diejenigen, die eine Oase in der Stadt suchen, ohne dabei kilometerweit aus derselbigen zu fahren. Mitten in den Isar-Auen mit hausgemachtem Essen und Fleisch vom Herrmannsdorfer...<br>
@@ -261,3 +266,15 @@
 </body> 
 </html>
      
+<script>
+  // When the user scrolls down 200px from the top of the document, slide down the navbar
+  window.onscroll = function() {scrollFunction()};
+  
+  function scrollFunction() {
+    if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+      document.getElementById("navbar").style.top = "0";
+    } else {
+      document.getElementById("navbar").style.top = "-100vh";
+    }
+  }
+  </script>
