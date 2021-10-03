@@ -3,8 +3,10 @@
 <head>
     <meta charset = "UTF-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1,user-scalable=no">
-    <link href ="https://fonts.google.com/specimen/Alegreya?selection.family=Alegreya:wght@400;700#about" rel = "stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@400;600&display=swap" rel="stylesheet">
+
     <link rel = "icon" type = "image/png" href = "Bilder/Logo_Isaralm_durchsichtig.png"/>
 	<script src="scripts/main.js"></script>
     <script src="https://kit.fontawesome.com/bfb2d585dc.js" crossorigin="anonymous"></script>
@@ -45,6 +47,29 @@
     //if cookie is set then hide the cookie box else show it
     checkCookie != -1 ? cookieBox.classList.add("hide") : cookieBox.classList.remove("hide");
   </script>
+<div id ="navabarstart">
+  <nav class="navbar">
+    <div class="content">
+      <div class="logo">
+        <a href="index.html"><img src=Bilder/Logo_Isaralm_durchsichtig.png alt="logo" style="width:20%"></a>
+      </div>
+      <ul class="menu-list">
+        <div class="icon cancel-btn">
+          <i class="fas fa-times"></i>
+        </div>
+        <li><a href="index.html">Start</a></li>
+        <li><a href="IsarAlm_Event.html">Dein Event</a></li>
+        <li><a href="Bilder.html">Bilder</a></li>
+        <li><a href="Kontakt.html">Kontakt</a></li>
+        <li><a href="Anfahrt.html">Anfahrt</a></li>
+   
+      </ul>
+      <div class="icon menu-btn">
+        <i class="fas fa-bars"></i>
+      </div>
+    </div>
+  </nav>
+</div>
 
 <nav class="navbar">
     <div class="content">
@@ -75,9 +100,9 @@
     
     function scrollFunction() {
       if (document.body.scrollTop > 2000 || document.documentElement.scrollTop > 2000) {
-        document.getElementsByClassName("navbar").style.top = "0";
+        document.getElementsById("navbarstart").style.top = "0";
       } else {
-        document.getElementsByClassName("navbar").style.top = "-50px";
+        document.getElementsById("navbarstart").style.top = "-50px";
       }
     }
     </script>
@@ -265,7 +290,7 @@
                
                <a href = "https://www.facebook.com/isaralm/?ref=page_internal" aria-label = "Facebook"><i class="fab fa-facebook-square"></i></a>
                <a href = "https://www.instagram.com/isar_alm/?hl=de" aria-label = "Instagram"><i class="fab fa-instagram"></i></a>
-              
+               
 </footer>
 </body> 
 </html>
