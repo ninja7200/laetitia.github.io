@@ -472,9 +472,13 @@ a:visited{
     height: 100%;
 }
 .Anfahrt2{
-    align-items: center; 
-    margin: auto;
-   align-content: center;
+   padding-left: 30px;  
+   text-align: left;
+   margin: auto;
+  
+}
+.Anfahrt2 p{
+  text-align: center;
 }
 
 .button{
@@ -484,12 +488,8 @@ a:visited{
 	cursor: pointer;
 	background-color: #97bf0d;
 	padding: 5px;
-    margin: auto;
-    display: block;
       
 }
-
-
 
 .button a {
 	color: white;
@@ -572,8 +572,10 @@ a:visited{
     }
 
     .kontrollstelle{
-        width: 99%;
+        width: 95%;
         text-align: right;
+
+        
     }
 
     .border{
@@ -591,27 +593,24 @@ a:visited{
     }
 
     .Anfahrt{
+      flex-direction: row;
+        text-align: left;
         
-        flex-direction: row;
-        text-align: center;
-
-        align-items: center;
         width: 99%;
-        margin: auto;
+        
         
     }
     .Anfahrt2{
-        padding: 20px;
-        align-items: left;
+        align-items: center;
         width: 33%;
-        
+        margin: auto;
     }
     
-    .button{
-        display: inline-block;
+    .Anfahrt2 p{
+      text-align: left;
     }
     
-    
+  
   .grid-item-image img{
     width: 40%;
     margin: auto;
