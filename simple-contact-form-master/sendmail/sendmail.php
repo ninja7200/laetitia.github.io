@@ -41,7 +41,7 @@ if(empty($_POST) === false) {
 				$email 		= test_input($_POST['email']);
 				$message 	= test_input($_POST['message']);
 
-				$to 		= "your-email@gmail.com";
+				$to 		= "lylk@gmx.de";
 				$subject 	= "Your Website Name: You have a new message from " . $name;
 				
 				$body 		= "
